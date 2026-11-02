@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Portfolio</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;600;700&family=Source+Serif+4:wght@400;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<main>
+
+  <section id="profile" class="profile">
+    <h2>Welcome to My Portfolio</h2>
+    <h1 id="name">Aktanbi Kusman</h1>
+    <p id="headline">Software engineering student</p>
+    <p class="intro">Hi! I am a student at Astana IT University.</p>
+    <button id="changeHeadline">Change headline</button>
+    <button id="highlightIntro">Style intro</button>
+    <button id="lightBtn">Light theme</button>
+    <button id="darkBtn">Dark theme</button>
+  </section>
+
+  <section id="about">
+    <h2>About Me</h2>
+    <p>I am studying web technologies and REALLY enjoy turning ideas into small, working projects.</p>
+    <p id="status"><strong>Status:</strong> Currently learning jQuery!</p>
+    <ul id="facts">
+      <li>I like playing chess.</li>
+      <li>I want to become a full-stack developer.</li>
+      <li>I enjoy walking and listening music.</li>
+    </ul>
+    <button id="hideBtn">Hide</button>
+    <button id="showBtn">Show</button>
+    <button id="toggleBtn">Toggle</button>
+  </section>
+
+  <section id="gallery-section">
+    <h2>Gallery</h2>
+    <div class="gallery">
+      <img id="img1" alt="67" src="i.webp">
+      <img id="img2" alt="meme" src="logo.png">
+    </div>
+    <button id="fadeInBtn">Fade In</button>
+    <button id="fadeOutBtn">Fade Out</button>
+    <button id="fadeToggleBtn">Fade Toggle</button>
+  </section>
+
+  <section id="favorites">
+    <h2>My Favorites</h2>
+    <h3 class="panel-title">My Favorite Music</h3>
+    <div class="panel">Nirvana - Smells like teen spirit.</div>
+    <h3 class="panel-title">My Favorite Movie</h3>
+    <div class="panel">Interstellar.</div>
+    <h3 class="panel-title">My Favorite Subject</h3>
+    <div class="panel">ДыШы.</div>
+    <p><button id="slideDownAll">Open all</button><button id="slideUpAll">Close all</button></p>
+  </section>
+
+  <section id="skills-section">
+    <h2>Technical Skills</h2>
+    <ul id="skills">
+      <li>HTML</li><li>CSS</li><li>JavaScript</li><li>jQuery</li>
+    </ul>
+    <input type="text" id="skillInput" placeholder="New skill" aria-label="New skill">
+    <button id="addSkill">Add Skill</button>
+    <button id="prependSkill">Prepend Skill</button>
+    <button id="removeSkill">Remove Skill</button>
+    <p id="error" role="alert"></p>
+  </section>
+
+  <section id="social">
+    <h2>Find Me Online</h2>
+    <p><a id="socialLink" href="https://github.com/Aqtanbi" target="_blank" rel="noopener">GitHub</a></p>
+    <button id="changeLink">Change link to LinkedIn</button>
+  </section>
+
+  <section id="contact">
+    <h2>Contact</h2>
+    <p><label for="nameInput">Name</label><br><input type="text" id="nameInput"></p>
+    <p><label for="emailInput">Email</label><br><input type="email" id="emailInput"></p>
+    <p>Name: <strong id="liveName"></strong></p>
+    <p>Email: <strong id="liveEmail"></strong></p>
+  </section>
+
+  <section id="skill-bars">
+    <h2>Skill Levels</h2>
+    <div class="bar-row"><span>HTML</span><div class="bar-track"><div class="bar" data-level="90"></div></div></div>
+    <div class="bar-row"><span>CSS</span><div class="bar-track"><div class="bar" data-level="60"></div></div></div>
+    <div class="bar-row"><span>JavaScript</span><div class="bar-track"><div class="bar" data-level="50"></div></div></div>
+    <div class="bar-row"><span>jQuery</span><div class="bar-track"><div class="bar" data-level="20"></div></div></div>
+    <button id="animateSkills">Animate My Skills</button>
+  </section>
+
+</main>
+
+<script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+<script src="script.js"></script>
+</body>
+</html>
