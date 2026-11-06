@@ -7,7 +7,7 @@
 ## Task 0. Setup
 Included jQuery from the CDN, wrote a `$(document).ready()` function and logged "jQuery is ready!" to the console.
 
-![Task 0](screenshots/task0.png)
+![Task 0](task0.png)
 
 ## Task 1. Selectors & CSS
 Used tag, ID and class selectors, changed the headline with `.text()` and `.html()`, styled elements with `.css()`, and added light/dark theme buttons.
